@@ -1,0 +1,133 @@
+{
+  "config": {
+    "name": "Spice Route Kitchen",
+    "currency": "₹"
+  },
+  "drivers": [
+    "Arun",
+    "Karthik",
+    "Meena",
+    "Suresh"
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "Chicken Biryani",
+      "category": "Mains",
+      "price": 220,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Veg Meals",
+      "category": "Mains",
+      "price": 120,
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Paneer Butter Masala",
+      "category": "Mains",
+      "price": 180,
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "Parotta (2 pcs)",
+      "category": "Sides",
+      "price": 40,
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "Filter Coffee",
+      "category": "Drinks",
+      "price": 30,
+      "available": true
+    },
+    {
+      "id": 6,
+      "name": "Gulab Jamun",
+      "category": "Desserts",
+      "price": 60,
+      "available": false
+    },
+    {
+      "id": 7,
+      "name": "Ice Cream",
+      "category": "Desserts",
+      "price": 55,
+      "available": true
+    }
+  ],
+  "orders": [
+    {
+      "id": 1004,
+      "customer": "Divya",
+      "phone": "9446456043",
+      "address": "63, Velachery, Chennai",
+      "items": [
+        {
+          "name": "Veg Meals",
+          "qty": 1,
+          "price": 120
+        }
+      ],
+      "total": 120,
+      "status": "Delivered",
+      "driver": "Suresh",
+      "time": "2026-10-05T05:37:21.675Z"
+    },
+    {
+      "id": 1003,
+      "customer": "Imran",
+      "phone": "9847857645",
+      "address": "11, Adyar, Chennai",
+      "items": [
+        {
+          "name": "Filter Coffee",
+          "qty": 1,
+          "price": 30
+        }
+      ],
+      "total": 30,
+      "status": "Delivered",
+      "driver": "Meena",
+      "time": "2026-10-05T05:36:10.774Z"
+    },
+    {
+      "id": 1002,
+      "customer": "Priya",
+      "phone": "9323001315",
+      "address": "44, T Nagar, Chennai",
+      "items": [
+        {
+          "name": "Chicken Biryani",
+          "qty": 1,
+          "price": 220
+        }
+      ],
+      "total": 220,
+      "status": "Delivered",
+      "driver": "Arun",
+      "time": "2026-10-05T05:35:56.631Z"
+    },
+    {
+      "id": 1001,
+      "customer": "Priya",
+      "phone": "9537944659",
+      "address": "74, Anna Nagar, Chennai",
+      "items": [
+        {
+          "name": "Parotta (2 pcs)",
+          "qty": 1,
+          "price": 40
+        }
+      ],
+      "total": 40,
+      "status": "Cancelled",
+      "driver": "",
+      "time": "2026-10-05T05:35:46.809Z"
+    }
+  ]
+}

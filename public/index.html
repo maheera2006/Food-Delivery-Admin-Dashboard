@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Kitchen Console</title>
+<link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head><body>
+<noscript>This dashboard needs JavaScript.</noscript>
+<div id="login" class="login">
+  <div class="brand"><div class="logo"><svg viewBox="0 0 24 24" class="ic"><path d="M3 12h18a9 9 0 0 1-18 0zM8 8c0-2 2-2 2-4M13 8c0-2 2-2 2-4"/></svg></div>
+    <h1>Kitchen Console</h1><p>Every order, driver and dish in one place.</p></div>
+  <div class="formside"><div class="box"><h2>Welcome back</h2><p class="mute">Sign in to run today's service.</p>
+    <input id="pw" type="password" placeholder="Admin password" aria-label="Admin password" autocomplete="current-password">
+    <button id="go" data-act="login">Sign in</button><p id="err" class="err" role="alert"></p></div></div>
+</div>
+<div id="app" hidden>
+<aside><div class="side-top"><div class="logo sm"><svg viewBox="0 0 24 24" class="ic"><path d="M3 12h18a9 9 0 0 1-18 0zM8 8c0-2 2-2 2-4M13 8c0-2 2-2 2-4"/></svg></div><h2 id="shop"></h2></div>
+<nav>
+<button data-act="tab" data-t="dash"><svg viewBox="0 0 24 24" class="ic"><path d="M4 13h6V4H4zM14 20h6V11h-6zM14 4h6v4h-6zM4 20h6v-3H4z"/></svg><span>Dashboard</span></button>
+<button data-act="tab" data-t="orders"><svg viewBox="0 0 24 24" class="ic"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6"/></svg><span>Orders</span></button>
+<button data-act="tab" data-t="menu"><svg viewBox="0 0 24 24" class="ic"><path d="M5 4v7a2 2 0 0 0 2 2v7M9 4v7M7 4v4M17 20V4c-2 1-3 4-3 7h3"/></svg><span>Menu</span></button>
+<button class="out" data-act="out"><svg viewBox="0 0 24 24" class="ic"><path d="M9 4H5v16h4M16 8l4 4-4 4M20 12H9"/></svg><span>Sign out</span></button>
+</nav></aside>
+<main><header><div><h1 id="title"></h1><p id="sub" class="mute"></p></div><button id="demo" data-act="demo">+ Add demo order</button></header><section id="view"></section></main></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script></body></html>
